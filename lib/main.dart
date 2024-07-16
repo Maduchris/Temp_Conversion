@@ -11,52 +11,52 @@ void main() {
     DeviceOrientation.portraitDown,
   ]);
 
-  runApp(const TempConverter());
+  runApp(const temperatureConverter());
 }
 
-class TempConverter extends StatelessWidget {
-  const TempConverter({Key? key}) : super(key: key);
+class temperatureConverter extends StatelessWidget {
+  const temperatureConverter({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Temperature Converter',
+      title: 'temperatureerature Converter',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.blue[50],
       ),
-      home: const TempConverterHome(),
+      home: const temperatureConverterHome(),
     );
   }
 }
 
-class TempConverterHome extends StatefulWidget {
-  const TempConverterHome({Key? key}) : super(key: key);
+class temperatureConverterHome extends StatefulWidget {
+  const temperatureConverterHome({Key? key}) : super(key: key);
 
   @override
-  _TempConverterHomeState createState() => _TempConverterHomeState();
+  _temperatureConverterHomeState createState() => _temperatureConverterHomeState();
 }
 
-class _TempConverterHomeState extends State<TempConverterHome> {
+class _temperatureConverterHomeState extends State<temperatureConverterHome> {
   String _conversionType = 'F to C';
   final TextEditingController _controller = TextEditingController();
-  String _convertedTemp = '';
+  String _convertedtemperature = '';
   final List<String> _history = [];
 
-  void _convertTemperature() {
+  void _converttemperatureerature() {
     setState(() {
-      double inputTemp = double.tryParse(_controller.text) ?? 0.0;
-      double convertedTemp;
+      double inputtemperature = double.tryParse(_controller.text) ?? 0.0;
+      double convertedtemperature;
 
       if (_conversionType == 'F to C') {
-        convertedTemp = (inputTemp - 32) * 5 / 9;
+        convertedtemperature = (inputtemperature - 32) * 5 / 9;
       } else {
-        convertedTemp = inputTemp * 9 / 5 + 32;
+        convertedtemperature = inputtemperature * 9 / 5 + 32;
       }
 
-      _convertedTemp = convertedTemp.toStringAsFixed(1);
+      _convertedtemperature = convertedtemperature.toStringAsFixed(1);
       _history.add(
-          '$_conversionType: ${inputTemp.toStringAsFixed(1)} => $_convertedTemp');
+          '$_conversionType: ${inputtemperature.toStringAsFixed(1)} => $_convertedtemperature');
     });
   }
 
@@ -64,7 +64,7 @@ class _TempConverterHomeState extends State<TempConverterHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Temperature Converter'),
+        title: const Text('temperatureerature Converter'),
         backgroundColor: Colors.blue,
       ),
       body: Padding(
@@ -138,12 +138,12 @@ class _TempConverterHomeState extends State<TempConverterHome> {
           controller: _controller,
           keyboardType: TextInputType.number,
           decoration: const InputDecoration(
-            labelText: 'Enter temperature',
+            labelText: 'Enter temperatureerature',
           ),
         ),
         const SizedBox(height: 20),
         ElevatedButton(
-          onPressed: _convertTemperature,
+          onPressed: _converttemperatureerature,
           child: const Text('Convert'),
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.blue,
@@ -152,7 +152,7 @@ class _TempConverterHomeState extends State<TempConverterHome> {
         ),
         const SizedBox(height: 20),
         Text(
-          'Converted temperature: $_convertedTemp',
+          'Converted temperatureerature: $_convertedtemperature',
           style: const TextStyle(fontSize: 20),
         ),
       ],

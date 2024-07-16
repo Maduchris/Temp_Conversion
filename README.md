@@ -1,4 +1,4 @@
-# temp_converter
+# temperature_converter
 
 A new Flutter project.
 
@@ -15,4 +15,4 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-Link to my Temperature converter App Demo Video - https://drive.google.com/drive/folders/166URcf4M7JSn0zxEjce8dvytzP-4Qwl6?usp=sharing
+Link to my temperatureerature converter App Demo Video - https://drive.google.com/drive/folders/206URcf4M7JSn0zxEjce8dvytzP-4Qwl6?usp=sharing

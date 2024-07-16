@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "temp_converter" "\0"
+            VALUE "FileDescription", "temperature_converter" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "temp_converter" "\0"
+            VALUE "InternalName", "temperature_converter" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "temp_converter.exe" "\0"
-            VALUE "ProductName", "temp_converter" "\0"
+            VALUE "OriginalFilename", "temperature_converter.exe" "\0"
+            VALUE "ProductName", "temperature_converter" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

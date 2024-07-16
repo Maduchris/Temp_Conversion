@@ -1,6 +1,6 @@
 {
-    "name": "temp_converter",
-    "short_name": "temp_converter",
+    "name": "temperature_converter",
+    "short_name": "temperature_converter",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
